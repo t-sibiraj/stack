@@ -69,7 +69,7 @@ deleted  -----> pop
 
 ```
 
-![stack-of-boxes](C:\Sibi\Stack\images\stack-of-boxes.jpg)
+![stack-of-boxes](images\stack-of-boxes.jpg)
 
 ​																         source: t-sibiraj.github.io/stack
 
@@ -89,7 +89,7 @@ NOTE: WE CAN''T ADD ELEMENTS IN BETWEEN
 The idea of push is exaplined as follows
 ```
 
-​              ![empty stack](C:\Sibi\Stack\images\empty-stack.jpg)      
+​              ![empty stack](images\empty-stack.jpg)      
 
 ​																source: t-sibiraj.github.io/stack    
 
@@ -99,13 +99,13 @@ The idea of push is exaplined as follows
   -------------------------------------------------
 ```
 
-​                    ![b-push-1](C:\Sibi\Stack\images\b-push-1.jpg)    
+​                    ![b-push-1](images\b-push-1.jpg)    
 
 ​																source: t-sibiraj.github.io/stack                                      
 
 =======================================================================================
 
-​                           ![push-1](C:\Sibi\Stack\images\push-1.jpg)                  
+​                           ![push-1](images\push-1.jpg)                  
 
 ​																source: t-sibiraj.github.io/stack                
 
@@ -117,13 +117,13 @@ The idea of push is exaplined as follows
   -------------------------------------------------
 ```
 
-​                           ![b-push-2](C:\Sibi\Stack\images\b-push-2.jpg) 
+​                           ![b-push-2](images\b-push-2.jpg) 
 
 ​																source: t-sibiraj.github.io/stack    
 
-=========================================================================================
+=======================================================================================
 
-![push-2](C:\Sibi\Stack\images\push-2.jpg)
+![push-2](images\push-2.jpg)
 
 ​																source: t-sibiraj.github.io/stack   
 
@@ -133,13 +133,13 @@ The idea of push is exaplined as follows
 Now we are adding(pushing) element 3 to the stack. But we can't add(push) element's in between in stack. We can add elements linearly i.e on top of each other one by one.
 ```
 
-![b-push-3](C:\Sibi\Stack\images\b-push-3.jpg)
+![b-push-3](images\b-push-3.jpg)
 
 ​																source: t-sibiraj.github.io/stack  
 
 
 
-![push-3](C:\Sibi\Stack\images\push-3.jpg)
+![push-3](images\push-3.jpg)
 
 ​																source: t-sibiraj.github.io/stack  
 
@@ -147,7 +147,7 @@ Now we are adding(pushing) element 3 to the stack. But we can't add(push) elemen
 So elements is now placed on top of the element 2 and element 1
 ```
 
-![push-3-correct](C:\Sibi\Stack\images\push-3-correct.jpg)
+![push-3-correct](images\push-3-correct.jpg)
 
 ​																source: t-sibiraj.github.io/stack  
 
@@ -167,7 +167,7 @@ INTIAL STACK
 Initially the stack contains three elements 1 , 2 and 3
 ```
 
-![](C:\Sibi\Stack\images\initial-stack.jpg)
+![](images\initial-stack.jpg)
 
 ​																              source: t-sibiraj.github.io/sql
 
@@ -175,11 +175,11 @@ Initially the stack contains three elements 1 , 2 and 3
 Now we are using pop method on a stack which has three elements. The element which is present on the top of the stack gets removed.
 ```
 
-![](C:\Sibi\Stack\images\b-remove-3.jpg)
+![](images\b-remove-3.jpg)
 
 ​																              source: t-sibiraj.github.io/sql
 
-![](C:\Sibi\Stack\images\pop-3.jpg)
+![](images\pop-3.jpg)
 
 ​																              source: t-sibiraj.github.io/sql
 
@@ -187,17 +187,17 @@ Now we are using pop method on a stack which has three elements. The element whi
 We can remove the element 1 which is located at the bottom of stack ,as we can only use pop to remove the element which is loacated at top of the stack
 ```
 
-![](C:\Sibi\Stack\images\pop-1..jpg)
+![](images\pop-1..jpg)
 
 ```
 The element at the top of the stack which is 2 gets removed
 ```
 
-![](C:\Sibi\Stack\images\b-remove-2.jpg)
+![](images\b-remove-2.jpg)
 
 ​																	source: t-sibiraj.github.io/stack
 
-![](C:\Sibi\Stack\images\pop-2.jpg)
+![](images\pop-2.jpg)
 
 ​																	source: t-sibiraj.github.io/stack
 
