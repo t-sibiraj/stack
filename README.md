@@ -1,10 +1,10 @@
-# (IN PROGRESS) (t-sibiraj.github.io/stack)
+# **(IN PROGRESS) (t-sibiraj.github.io/stack)**
 
-### New topics will be added on a timely basis. Visit the above link to to get latest verison of this pdf
+### **New topics will be added from time to time. Visit the above link to to get latest version of this pdf**
 
-[Learn SQL](t-sibiraj.github.io/sql)
+https://github.com/t-sibiraj/stack            [Light Mode](https://t-sibiraj.github.io/stack/)             [Dark Mode](https://htmlpreview.github.io/?https://github.com/t-sibiraj/stack/blob/main/index-dark.html)            [Download](https://github.com/t-sibiraj/stack/raw/main/stack.pdf)             [More](https://github.com/t-sibiraj/learn)
 
-# DATA   STRUCTURES
+# **DATA   STRUCTURES**
 
 ```python
 Data structure is nothing but a particular way used to store and organize data
@@ -26,7 +26,7 @@ By storing the data(student''s name) in the form of list(data structure) we can
 
 
 
-# DATA   TYPE   VS   DATA STRUCTURE(COMING SOON)
+# **DATA   TYPE   VS   DATA STRUCTURE(COMING SOON)**
 
 ```
 Before we continue to learn about DS(Data Structures) it is important to know the difference between data type and data structure
@@ -37,7 +37,7 @@ Data Structure -> List , Stacks , Queues
 
 
 
-# STACKS  
+# **STACKS**  
 
 ```python
 Stack is basically a data structure like list
@@ -75,7 +75,7 @@ deleted  -----> pop
 
 
 
-## PUSH   METHOD
+## **PUSH   METHOD**
 
 ```python
 In list we have various methods like pop() , insert() , remove() , sort() and etc..
@@ -155,7 +155,7 @@ So elements is now placed on top of the element 2 and element 1
 
 
 
-## POP METHOD
+## **POP METHOD**
 
 ```python
 pop() ---> It is like pop() in list. When we use the pop method on a stack ,the elements at the top of the stack gets removed(popped). We can''t pop(remove) elements in between.
@@ -208,7 +208,7 @@ We can only push(add) or pop(remove) elemnts to the top of the stack. We can't a
 
 
 
-## PEEK
+## **PEEK**
 
 ```python
 peek() ---> We can use this method to  retrieve the element which is loacted at the top of stack
@@ -217,7 +217,7 @@ peek() ---> We can use this method to  retrieve the element which is loacted at 
 
 
 
-## Overflow
+## **Overflow**
 
 ```python
 Overflow occurs when we try to push elements to a stack which is already full.
@@ -227,7 +227,7 @@ The above situation leads to an eror known as StackOverflowError.
 
 
 
-## Underflow
+## **Underflow**
 
 ```python
 Underflow occurs when we try to pop elements from a empty stack or a stack which has no elements left
@@ -237,7 +237,7 @@ The above situation leads to an eror known as StackUnderflowError.
 
 
 
-## IsEmpty
+## **IsEmpty**
 
 ```
 This method can be used to check if a stack is empty or not
@@ -248,7 +248,7 @@ False ---> If the stack has some elements
 
 
 
-## IsFull
+## **IsFull**
 
 ```
 This method can be used to check if a stack is full or not
@@ -268,7 +268,7 @@ For example if we have bounded stack of size of 5 ,we can''t add more than 5 ele
 
 
 
-## Item -node aka elements present in a stack
+## **Item -node aka elements present in a stack**
 
 ```python
 item-node ---> It is nothing but the name given to elements stored in a stack
@@ -288,7 +288,7 @@ type
 
 
 
-## IMPLEMENTING   STACK   IN   PYTHON (IMPORTANT)
+## **IMPLEMENTING   STACK   IN   PYTHON (IMPORTANT)**
 
 ```
 funtion ---> def add(num1 , num2):
@@ -317,15 +317,19 @@ Our stack should be able to display these two error ---> StackOverFlowError , St
 1.THE FOLLWING CODE IS IMPLEMENTED WITH REFERENCE TO MARKING SCHEME ISSUED BY CBSE
 
 2.CBSE PYQ AND MARKING SCHEME:  
-https://github.com/t-sibiraj/sql/raw/main/COMPUTER-SCIENCE-PYQ-CLASS-12.pdf
+https://docs.google.com/viewer?url=https://raw.githubusercontent.com/t-sibiraj/stack/main/COMPUTER-SCIENCE-PYQ-CLASS-12.pdf
 (Use the find(Ctrl + F) method to find stack questions and their respective marking schemes)
 
 3. One can implement a stack using functions or by using class. As classes and objects are out of syllabus we will be using funtions to implement our stack.
 ```
 
+marking scheme:
 
+https://docs.google.com/viewer?url=https://raw.githubusercontent.com/t-sibiraj/stack/main/COMPUTER-SCIENCE-PYQ-CLASS-12.pdf
 
-### CREATING   A   STACK
+download: https://raw.githubusercontent.com/t-sibiraj/stack/main/COMPUTER-SCIENCE-PYQ-CLASS-12.pdf
+
+### **CREATING   A   STACK**
 
 ```python
 CODE:
@@ -352,7 +356,7 @@ The variable stack_1 now has an empty stack.
 
 
 
-### Implementing   peek()    method
+### **Implementing   peek()    method**
 
 ```python
 CODE:
@@ -730,5 +734,7 @@ Stack empty
 
 
 
-## Applications of Stack(COMING SOON)
+## **Applications of Stack(COMING SOON)**
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ft-sibiraj%2Fsql&count_bg=%230963E5&title_bg=%230EE915&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://t-sibiraj.github.io/) <a href="https://t-sibiraj.github.io/"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ft-sibiraj%2Fsql&count_bg=%230963E5&title_bg=%230EE915&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
 
