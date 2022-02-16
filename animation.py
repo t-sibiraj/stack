@@ -1,3 +1,8 @@
+'''
+The Manim Community Developers. (2022). Manim – Mathematical Animation Framework (Version v0.14.0) [Computer software]. https://www.manim.community/
+
+The Manim library used in this code is licensed under MIT license
+'''
 #%%manim -v WARNING -ql New
 #"python -m manim -v WARNING -qm animation.py New"
 from manim import *
