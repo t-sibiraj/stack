@@ -1,8 +1,24 @@
-# **(IN PROGRESS) (t-sibiraj.github.io/stack)**
+https://github.com/t-sibiraj/stack            [Light Mode](https://t-sibiraj.github.io/stack/)             [Dark Mode](https://htmlpreview.github.io/?https://github.com/t-sibiraj/stack/blob/main/index-dark.html)            [Download](https://github.com/t-sibiraj/stack/raw/main/stack.pdf)             [More](https://t-sibiraj.github.io/learn/)
 
-### **New topics will be added from time to time. Visit the above link to to get latest version of this pdf**
+# TABLE OF CONTENTS:
 
-https://github.com/t-sibiraj/stack            [Light Mode](https://t-sibiraj.github.io/stack/)             [Dark Mode](https://htmlpreview.github.io/?https://github.com/t-sibiraj/stack/blob/main/index-dark.html)            [Download](https://github.com/t-sibiraj/stack/raw/main/stack.pdf)             [More](https://github.com/t-sibiraj/learn)
+[TOC]
+
+```
+
+```
+
+### 							**New topics will be added from time to time.**
+
+```
+
+```
+
+
+
+```
+Visit this link ( https://github.com/t-sibiraj/stack ) to get the latest version of this pdf.
+```
 
 # **DATA   STRUCTURES**
 
@@ -734,7 +750,384 @@ Stack empty
 
 
 
-## **Applications of Stack(COMING SOON)**
+# **Applications of Stack(COMING SOON)**
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ft-sibiraj%2Fsql&count_bg=%230963E5&title_bg=%230EE915&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true)](https://t-sibiraj.github.io/) <a href="https://t-sibiraj.github.io/"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ft-sibiraj%2Fsql&count_bg=%230963E5&title_bg=%230EE915&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
+1. **Can be used to reverse a line or word:**
+
+   ```
+   For example: 
+   
+   For example to reverse the word 'python'
+   First we should add each letters to a stack
+   
+   We can reverse it by poping off each letter from the stack
+   ```
+
+   
+
+   ```python
+   stack = [ 'p' , 'y' , 't' , 'h' , 'o' , 'n' ]
+   reversed_stack = Stack()
+   
+   for letter in stack:
+   	reversed_stack.push(stack.pop())
+   
+   print(reversed_stack)     
+   [ 'n' , 'o' , 'h' , 't' , 'y' , 'p' ]    
+   
+   #before running the above code you must have implemented the ^ Stack class^
+   ```
+
+2. **In compilers:**
+
+   ```
+   Stacks can be used in compilers to solve a expression by converting the expression to prefix or postfix form.
+   
+   
+   Stacks can also be used to store the state of a program
+   ```
+
+
+
+
+3. **Backtracking:**
+
+   ```
+   It is used in puzzles like Sudoku , n-Queen.
+   It is used in optimization problems like knapsack problem
+   ```
+
+   
+
+4. **Polish Strings:   (IMPORTANT)**
+
+## Polish strings:
+
+```python
+Computers can only understand and work in binary. So it can only evaluate expressions which only have two operands like A + B ,  A * B. But it can''t evaluate expression like  (A + B) * C which has more than two operands. Those expression which have more than two operands are called as complex expressions.
+
+To evaluate these compelx expression our computer converts them into polish strings.
+
+Polish strung is nothing but a notation in which the operator symbol is either placed before its operand(prefix notation) or it is placed after its operator(postfix notation).
+
+infix   notation:  operator is placed in between the operands
+prefix  notation:  operator is placed before the operands
+postfix notation:  operator is placed after the operands
+
+EXPRESSION: A + B
+
+infix notation: A + B
+prefix notation: +AB
+postfix noation: AB+
+```
+
+### INFIX EXPRESSION:
+
+#### 1.EVALUATING INFIX EXPRESSION:
+
+```python
+TO EVALUATE AN INFIX EXPRESSION YOU MUST FOLLOW BODMAS RULE
+
+B  --> Bracket        --> () , [] , {}
+O  --> Order (Power)  --> a^2
+D  --> Division       --> ÷ , /
+M  --> Multiplication --> x , *
+A  --> Addition       -->  +
+S  --> Subraction     --> -
+
+
+EXAMPLE:(2 + 4 * ( 5 * 10^2) - 10 / 2) +  10 * 7 + 2
+
+		(2 + 4 * (5 * 100) - 10 / 2)  + 10 * 7 + 2 
+		 
+		(2 + 4 * 500 - 10 / 2)  + 10 * 7 + 2 
+        
+        (2 + 4 * 500 - 5)  + 10 * 7 + 2 
+        
+        (2 + 2000 - 5)  + 10 * 7 + 2
+        
+        (2002 - 5)  + 10 * 7 + 2
+        
+        1997  + 10 * 7 + 2
+
+		1997 + 70 + 2 
+        
+        2067 + 2
+        
+        2069
+```
+
+```
+
+```
+
+
+
+### POSTFIX EXPRESSION:
+
+#### CONVERSION TO INFIX TO POSTFIX:
+
+##### MANUAL METHOD:
+
+```python
+EVALUATION ORDER:
+
+() , [] 	---> Brackets and paranthesis
+
+^ 			---> Exponentation
+
+* or  / 	---> Multiplication and Division
+
++ or -  	---> Addition and Subraction
+
+
+
+
+STEPS TO CONVERT INFIX TO POSTFIX EXPRESSION:
+
+1. First of all we need to insert brackets according to the evaluation order
+
+2. Then we should convert the postfix expression present in the innermost brackets by putting the operator after the operands
+
+3. Repeat the above steps untill you entirely convert the infix expression to postfix expression.
+
+```
+
+```python
+EXAMPLES:
+
+1.A + B - C
+
+Let''s first insert the brackets
+
+(A + B) - C
+
+((A + B) - C )
+
+Now let''s start to convert the postifx expression present in the inner most brackets till we reach the outermost brackets
+
+((A + B) - C )
+
+( AB+ - C )
+
+AB+C-
+
+
+Before we move on to the next question . Let us see what will happen if we intoduce parenthesis in our question
+
+
+1.A + (B - C)
+
+Let''s first insert the brackets
+
+A  + (B - C)
+
+(A + (B - C))
+
+Before we move on to the next question . Let us see what will happen if we intoduce parenthesis in our question
+
+(A + (B - C))
+
+(A + BC-)
+
+ABC-+
+```
+
+<video controls autoplay muted>  
+<source src="videos/1-manual-method-infix-postfix.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+```PYTHON
+2. A + B * C - D / E
+
+Let''s first insert the brackets
+
+A + (B * C) - D / E
+
+A + (B * C) - (D / E)
+
+(A + (B * C) ) - (D / E)
+
+((A + (B * C) ) - (D / E))    
+
+Now let''s start to convert the postifx expression present in the inner most brackets till we reach the outermost brackets
+
+((A + (B * C) ) - (D / E)) 
+
+((A + BC* ) - (D / E))   
+
+((A + BC* ) - DE/)
+
+(((ABC*+ ) - DE/))
+
+(ABC*+DE/-)
+
+(ABC*+DE/-)
+```
+
+<video controls autoplay muted>  
+<source src="videos/2-manual-method-infix-postfix.mp4" type="video/mp4">
+</video>
+
+
+```python
+3. P – Q / R ^ S + T
+
+Let''s first insert the brackets
+
+P - Q / (R ^ S) + T
+
+P - (Q / (R ^ S) + T
+
+(P - (Q / (R ^ S)) + T
+
+((P - (Q / (R ^ S)) + T)
+
+
+Now let''s start to convert the postifx expression present in the inner most brackets till we reach the outermost brackets
+
+((P - (Q / (R ^ S)) + T)
+
+((P - (Q / RS^ ))+ T)
+
+((P - QRS^/) + T)
+
+(PQRS^/-  + T)
+
+PQRS^/-T+
+```
+
+<video controls autoplay muted>  
+<source src="videos/3-manual-method-infix-postfix.mp4" type="video/mp4">
+</video>
+
+```python
+4. A + B * C ^ D - E
+
+Let''s first insert the brackets
+
+A + B * (C ^ D) - E
+
+A + (B * (C ^ D)) - E
+
+(A + (B * (C ^ D))) - E
+
+((A + (B * (C ^ D))) - E)
+
+Now let''s start to convert the postifx expression present in the inner most brackets till we reach the outermost brackets
+
+((A + (B * (C ^ D))) - E)
+
+((A + (B * CD^)) - E)
+
+((A + BCD^*) - E)
+
+(ABCD^*+ - E)
+
+ABCD^*+E-
+```
+
+```python
+5.A / (B+C) * D - E
+
+Let''s first insert the brackets
+
+A / (B+C) * D - E
+
+(A / (B+C) )* D - E
+
+((A / (B+C) )* D )- E
+
+(((A / (B+C) )* D )- E)
+
+Now let''s start to convert the postifx expression present in the inner most brackets till we reach the outermost brackets
+
+(((A / (B+C) )* D )- E)
+
+(((A / BC+ )* D )- E)
+
+((ABC+/ * D )- E)
+
+(ABC+/D*- E)
+
+ABC+/D*E-
+
+```
+
+<video controls autoplay muted>  
+<source src="videos/5-manual-method-infix-postfix.mp4" type="video/mp4">
+</video>
+
+```
+%%manim -v WARNING -qm HelloCircle
+
+class HelloCircle(Scene):
+    def construct(self):
+        label1   =  Text('((A + (B * C) ) - (D / E))')
+        label2   =  MarkupText(f'((A + <span fgcolor="{BLUE}">BC*</span> ) - (D / E))')    
+        label3   =  MarkupText(f'((A + <span fgcolor="{BLUE}">BC*</span> ) - <span fgcolor="{BLUE}">DE/)</span>')
+        label4   =  MarkupText(f'(<span fgcolor="{BLUE}">(ABC*+ )</span> - <span fgcolor="{BLUE}">DE/</span>)')
+        label5   =  Text('ABC*+DE/-',color='#58C4DD')
+
+
+        self.play(Write(label1))
+        self.wait()
+        self.play(Transform(label1, label2))
+        self.wait()
+        self.clear()
+        self.play(Transform(label2, label3))
+        self.wait()
+        self.clear()
+        self.play(Transform(label3, label4))
+        self.wait()
+        self.clear()
+        self.play(Transform(label4, label5))
+        self.wait()
+        self.clear()
+```
+
+
+
+```python
+PRACTISE QUESTIONS:
+
+1. U - V / W * X + Y      [ANSWER: UVW/X*-Y+ ]
+
+2. J + K / L - M * N      [ANSWER: JKL/+MN*- ]
+
+3. A + B * C ^ D - E      [ANSWER: ABCD^*+E  ]
+
+4. U * V + (W - Z) / X    [ANSWER: UV*WZ-X/+]
+
+5. P + ( Q - R ) * S / T  [ANSWER: PQR-S*T/+]
+
+6. X - ( Y + Z ) / U * V  [ANSWER: XYZ+U/V*-]
+
+Convert the following Infix expression to its equivalent Postfix expression, showing
+the stack contents for each step of conversion:
+X - ( Y + Z ) / U * V
+
+
+```
+
+
+
+
+​    <a href="https://github.com/t-sibiraj/learn"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ft-sibiraj%2Fsql&count_bg=%23000000&title_bg=%23FFFFFF&icon_color=%23000000&title=Views&edge_flat=false"/></a>  	                   																				
+
+------
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+------
+
+​										***Copyright © 2022 T.Sibiraj. Some rights reserved.***
 
