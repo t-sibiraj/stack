@@ -1031,6 +1031,10 @@ Now let''s start to convert the postifx expression present in the inner most bra
 ABCD^*+E-
 ```
 
+<video controls autoplay muted>  
+<source src="videos/4-manual-method-infix-postfix.mp4" type="video/mp4">
+</video>
+
 ```python
 5.A / (B+C) * D - E
 
@@ -1062,36 +1066,6 @@ ABC+/D*E-
 <source src="videos/5-manual-method-infix-postfix.mp4" type="video/mp4">
 </video>
 
-```
-%%manim -v WARNING -qm HelloCircle
-
-class HelloCircle(Scene):
-    def construct(self):
-        label1   =  Text('((A + (B * C) ) - (D / E))')
-        label2   =  MarkupText(f'((A + <span fgcolor="{BLUE}">BC*</span> ) - (D / E))')    
-        label3   =  MarkupText(f'((A + <span fgcolor="{BLUE}">BC*</span> ) - <span fgcolor="{BLUE}">DE/)</span>')
-        label4   =  MarkupText(f'(<span fgcolor="{BLUE}">(ABC*+ )</span> - <span fgcolor="{BLUE}">DE/</span>)')
-        label5   =  Text('ABC*+DE/-',color='#58C4DD')
-
-
-        self.play(Write(label1))
-        self.wait()
-        self.play(Transform(label1, label2))
-        self.wait()
-        self.clear()
-        self.play(Transform(label2, label3))
-        self.wait()
-        self.clear()
-        self.play(Transform(label3, label4))
-        self.wait()
-        self.clear()
-        self.play(Transform(label4, label5))
-        self.wait()
-        self.clear()
-```
-
-
-
 ```python
 PRACTISE QUESTIONS:
 
@@ -1106,12 +1080,6 @@ PRACTISE QUESTIONS:
 5. P + ( Q - R ) * S / T  [ANSWER: PQR-S*T/+]
 
 6. X - ( Y + Z ) / U * V  [ANSWER: XYZ+U/V*-]
-
-Convert the following Infix expression to its equivalent Postfix expression, showing
-the stack contents for each step of conversion:
-X - ( Y + Z ) / U * V
-
-
 ```
 
 
